@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory</title>
+    <script src="jquery.min.js"></script>
+    <script src="memory.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="memory.css">
+</head>
+
+<body>
+    <div class="victory" id="victory">
+
+        <p id="score">Your score was: </p>
+
+        <h1>YOU WON</h1>
+
+        <p>ENTER YOUR NAME</p>
+        <input type="text" name="input" class="input" id="input" maxlength="3" required>
+    </br>
+        <input type="submit" value="SAVE SCORE" class="btn" id="btn">
+
+    <h3>BEST SCORES</h3>
+
+        <table class="tabla">
+
+            <tr class="primera-fila">
+                <td>1</td>
+                <td id="puntaje_uno">0000pts</td>
+                <td id="nombre_uno">---</td>
+            </tr>
+
+            <tr class="segunda-fila">
+                <td>2</td>
+                <td id="puntaje_dos">0000pts</td>
+                <td id="nombre_dos">---</td>
+            </tr>
+
+            <tr class="tercera-fila">
+                <td>3</td>
+                <td id="puntaje_tres">0000pts</td>
+                <td id="nombre_tres">---</td>
+            </tr>
+
+            <tr class="cuarta-fila">
+                <td>4</td>
+                <td id="puntaje_cuatro">0000pts</td>
+                <td id="nombre_cuatro">---</td>
+            </tr>
+
+            <tr class="quinta-fila">
+                <td>5</td>
+                <td id="puntaje_cinco">0000pts</td>
+                <td id="nombre_cinco">---</td>
+            </tr>
+
+        </table>
+    </div>
+    
+    <div class="press_start">
+        <h1>PRESS START TO PLAY</h1>
+        <h2>INSERT COIN</h2>
+    </div>
+
+    <div class="game-over" id="game_over">
+        <img src="img/game-over.png" alt="">
+    </div>
+
+    <p class="titulo">MEMORY</p>
+
+    <div class="marcador" id="marcador">
+
+        <p class="puntaje" id="puntaje">Puntaje: 0</p>
+        <p class="tiempo" id="tiempo">Tiempo: 60</p>
+
+    </div>
+
+    <div class="contenedor"></div>
+
+
+    <audio id="coin">
+        <source type="audio/mpeg" src="sounds/coin-sfx.mp3">
+    </audio>
+
+    <audio id="song1">
+        <source type="audio/mpeg" src="sounds/marble-sound.mp3">
+    </audio>
+
+    <audio id="song2">
+        <source type="audio/mpeg" src="sounds/capcom-sound.mp3">
+    </audio>
+
+    <audio id="cuphead">
+        <source type="audio/mpeg" src="sounds/cuphead-sound.mp3">
+    </audio>
+
+    <audio id="game_over_sound">
+        <source type="audio/mpeg" src="sounds/game-over-sound.mp3">
+    </audio>
+
+    <audio id="victory_sound">
+        <source type="audio/mpeg" src="sounds/victory-sound.mp3">
+    </audio>
+
+
+
+
+</body>
+
+</html>
